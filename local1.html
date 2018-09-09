@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>local sorage</title>
+    <link rel="stylesheet" type="text/css" href="local1.css">
+        <script src="local1.js"></script>
+</head>
+<body onload="init()">
+        <div class="container">
+            <header class="headerbar top"><h1>Registration</h1></header>
+            <div class="leftbar">
+                <div>
+                    <fieldset>
+                        <label>First Name</label>
+                        <input type="text"  id="firstname">
+                    </fieldset>
+                    <fieldset>
+                        <label>Last Name</label>
+                        <input type="text"  id="lastname">
+                    </fieldset>
+                    <fieldset>
+                        <label>Roll Number</label>
+                        <input type="text"  id="rollnum">
+                    </fieldset>
+                    <fieldset>
+                        <label>Subject</label>
+                        <select id="subject">
+                            <option value="Math1">Math1</option>
+                            <option value="math2">math2</option>
+                            <option value="Chemistry">Chemistry</option>
+                            <option value="English">English</option>
+                            <option value="Kannada">Kannada</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <label> </label>
+                        <button id="submit" onclick="onRegisterPressed()">Register</button>
+                        <button id="clear" onclick="onClarPressed()">Clear</button>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="rightbar">
+                <table id="regtable">
+                    
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Roll Number</th>
+                            <th>Subject</th>
+                      </tr>
+                   
+                    <tbody id="tablerows">
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+    </body>
+</html>
